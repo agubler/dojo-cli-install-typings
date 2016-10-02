@@ -63,5 +63,5 @@ export default async function(helper: Helper, args: TypingsArgs) {
 	console.info(chalk.underline('Installing typings'));
 	const result: typings.InstallResult = await typings.install({ cwd: args.directory});
 	console.info(parseInstallResults(result));
-	console.info(chalk.green.bold('successfully installed typings'));
+	console.info(chalk.green('successfully installed typings'));
 }
